@@ -17,7 +17,7 @@ const productsData = [
 
 function App() {
     const [products, setProducts] = useState(productsData);
-    const [sortOrder, setSortOrder] = useState('asc');
+    const [, setSortOrder] = useState('asc');
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
 
@@ -30,7 +30,7 @@ function App() {
                 return b.price - a.price;
             }
         });
-        setProducts(sortedProducts);
+        setProducts(sortedProducts);        
     };
 
     const addProduct = () => {
